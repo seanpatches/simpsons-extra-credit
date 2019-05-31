@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Quote({ quote }) {
   return (
@@ -9,3 +10,9 @@ function Quote({ quote }) {
     </>
   );
 }
+
+Quote.propTypes = {
+  quote: PropTypes.object.isRequired
+};
+
+export default Quote;

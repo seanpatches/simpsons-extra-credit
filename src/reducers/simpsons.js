@@ -15,5 +15,6 @@ export default function reducer(state = initialState, action){
       return { ...state, quote: action.payload, loading: false };
     case PENDING_QUOTE: 
       return { ...state, loading: true };
+    default : return state;
   }
 }

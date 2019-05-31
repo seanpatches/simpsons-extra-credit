@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux';
-import simpson from './simpsons';
+import simpsons from './simpsons';
 
-export default combineReducers(
+export default combineReducers({
   simpsons
-);
+});
 
